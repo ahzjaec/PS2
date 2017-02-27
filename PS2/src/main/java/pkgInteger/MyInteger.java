@@ -15,37 +15,33 @@ public class MyInteger {
 	public boolean isEven(){
 		if (iValue%2==0){
 			return true;
-		}
-			else{
-				return false;
+		}else{
+			return false;
 			}
 	}
 	
 	public boolean isOdd(){
 		if (iValue%2==1){
 			return true;
+		}else{
+			return false;
 		}
-			else{
-				return false;
-				}
 	}
 	
 	public boolean isPrime(){
 		
-		int inc,x=777; 
 		boolean prime = false;
-		x=iValue/2;    
-		for(inc=2;inc<=x;inc++){    
-		   if(iValue%inc==0){        
+		int x=iValue/2;    
+		for(int i=2;i<=x;i++){    
+		   if(iValue%i==0){        
 		   prime=true;    
 		   break;    
-		  }    
+		   }    
 		  }    
 		if(prime==false){
 			return true;
-		}
-			else{
-				return false;
+		}else{
+		return false;
 			} 
 		}  
 	
@@ -69,39 +65,35 @@ public class MyInteger {
 	
 	public static boolean isPrime(int iValue){
 
-		int inc,x=777; 
 		boolean prime = false;
-		x=iValue/2;    
-		for(inc=2;inc<=x;inc++){    
-		   if(iValue%inc==0){        
+		int x=iValue/2;    
+		for(int i=2;i<=x;i++){    
+		   if(iValue%i==0){        
 		   prime=true;    
 		   break;    
 		  }    
 		  }    
 		if(prime==false){
 			return true;
-		}
-			else{
-				return false;
+		}else{
+		return false;
 			} 
 		}
 	
 	public static boolean isEven(MyInteger Integer){
 		if (Integer.iValue%2==0){
 			return true;
-		}
-			else{
-				return false;
+		}else{
+		return false;
 			}
 	}
 	
 	public static boolean isOdd(MyInteger Integer){
 		if (Integer.iValue%2==1){
 			return true;
+		}else{
+		return false;
 		}
-			else{
-				return false;
-				}
 	}
 	
 	public static boolean isPrime(MyInteger Integer){
@@ -118,9 +110,8 @@ public class MyInteger {
 		  }    
 		if(prime==false){
 			return true;
-		}
-			else{
-				return false;
+		}else{
+			return false;
 			} 
 		}  
 }
